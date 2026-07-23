@@ -1,0 +1,14 @@
+[MASTER]
+fail-under=7.0
+
+[MESSAGES CONTROL]
+# E0401: third-party packages resolved at runtime, not in pylint's analysis path
+# R0801: duplicate-code expected in test setup blocks
+disable=E0401,R0801
+
+[FORMAT]
+max-line-length=100
+
+[DESIGN]
+max-args=7
+max-locals=16

@@ -1,0 +1,5 @@
+2026-07-23 18:35:16,251 - INFO - SUCCESS: import_data - shape=(10127, 22)
+2026-07-23 18:35:17,269 - INFO - SUCCESS: perform_eda - 5 images saved to ./images/eda
+2026-07-23 18:35:17,289 - INFO - SUCCESS: encoder_helper - 5 encoded columns added
+2026-07-23 18:35:17,307 - INFO - SUCCESS: perform_feature_engineering - train=7088, test=3039
+2026-07-23 18:35:27,617 - INFO - SUCCESS: train_models - 2 models and 4 images saved
