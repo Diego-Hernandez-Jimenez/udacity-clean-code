@@ -16,19 +16,19 @@ The pipeline is implemented following clean-code principles: modular functions, 
 
 ### Main Files
 
-- `churn_library.py`  
+- `src/churn_library.py`  
   Core library with all pipeline functions: data import, EDA, categorical encoding, feature engineering, model training, and reporting. Designed to be imported by other scripts.
 
 - `main.py`  
   Entry point that orchestrates the full pipeline by calling functions from `churn_library.py`.
 
-- `churn_script_logging_and_tests.py`  
+- `src/churn_script_logging_and_tests.py`  
   Test suite that exercises each function in `churn_library.py`, logs SUCCESS or ERROR messages to `logs/churn_library.log`, and re-raises exceptions on failure.
 
-- `churn_notebook.ipynb`  
+- `notebooks/churn_notebook.ipynb`  
   Exploratory notebook used as the original prototype. The production code in `churn_library.py` was refactored from this notebook.
 
-- `param_config.yaml`  
+- `src/param_config.yaml`  
   Hyperparameter configuration for the Random Forest grid search and the train/test split ratio. Decouples model parameters from code.
 
 - `.env`  
@@ -75,7 +75,7 @@ Loads data from `data/bank_data.csv`, performs EDA, encodes categorical features
 ### 2. Run Tests and Logging
 
 ```bash
-python churn_script_logging_and_tests.py
+python src/churn_script_logging_and_tests.py
 ```
 
 Runs five tests — one per pipeline function — and writes structured log messages to `logs/churn_library.log`. Each test logs `SUCCESS` with relevant metrics on pass, or `ERROR` with the exception message on failure, then re-raises the exception.
