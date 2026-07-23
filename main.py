@@ -5,7 +5,7 @@ Author: Diego Hernández Jiménez
 Date: 23/07/2026
 """
 
-from churn_library import (
+from src.churn_library import (
     DATA_PATH,
     create_output_directories,
     encoder_helper,

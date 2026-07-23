@@ -145,7 +145,7 @@ def encoder_helper(dataframe, category_lst, response):
     return dataframe
 
 
-def perform_feature_engineering(dataframe, response, config_path="param_config.yaml"):
+def perform_feature_engineering(dataframe, response, config_path="src/param_config.yaml"):
     """
     Build feature matrix and split dataset into train and test sets.
 
@@ -275,7 +275,7 @@ def feature_importance_plot(model, x_data, output_pth):
     plt.close()
 
 
-def train_models(x_train, x_test, y_train, y_test, config_path="param_config.yaml"):
+def train_models(x_train, x_test, y_train, y_test, config_path="src/param_config.yaml"):
     """
     Train RF and LR models, then save models, ROC curve, classification reports,
     and feature importances.
